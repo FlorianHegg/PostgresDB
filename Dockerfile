@@ -17,7 +17,6 @@ COPY /setup-scripts/03_emp-dept_data.sql /docker-entrypoint-initdb.d/
 COPY /setup-scripts/04_verein_tables.sql /docker-entrypoint-initdb.d/
 COPY /setup-scripts/05_verein_data.sql /docker-entrypoint-initdb.d/
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 5432
 
 CMD ["postgres"]
